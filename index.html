@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jueguito</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header class="juegos">
+      <h1>Jueguitos</h1>
+
+      <nav>
+        <a class="juego containerJuegos" id="jueguito1" href="/index.html"
+          >Jueguito 1</a
+        >
+        <a class="juego containerJuegos" id="jueguito2" href="/ppt.html"
+          >Jueguito 2</a
+        >
+      </nav>
+    </header>
+
+    <main>
+      <div class="container">
+        <div class="board" role="grid" aria-label="Tablero de juego">
+          <div class="celda" role="button" tabindex="0" data-index="0">1</div>
+          <div class="celda" role="button" tabindex="0" data-index="1">2</div>
+          <div class="celda" role="button" tabindex="0" data-index="2">3</div>
+          <div class="celda" role="button" tabindex="0" data-index="3">4</div>
+          <div class="celda" role="button" tabindex="0" data-index="4">5</div>
+          <div class="celda" role="button" tabindex="0" data-index="5">6</div>
+          <div class="celda" role="button" tabindex="0" data-index="6">7</div>
+          <div class="celda" role="button" tabindex="0" data-index="7">8</div>
+          <div class="celda" role="button" tabindex="0" data-index="8">9</div>
+        </div>
+
+        <button id="restart" class="boton">Reiniciar</button>
+        <button id="limpiar" class="boton">Borrar registro</button>
+
+        <div id="timer" class="timer" aria-live="polite">
+          Tiempo: <span id="time">0</span> segundos
+        </div>
+        <div id="message" class="message" aria-live="polite"></div>
+      </div>
+
+      <div class="high-scores-container">
+        <h3>Mejores Tiempos</h3>
+        <ol id="highScores" class="high-scores"></ol>
+      </div>
+    </main>
+
+    <script src="js/script.js"></script>
+    <!-- <script src="/js/api.js"></script> -->
+  </body>
+</html>
